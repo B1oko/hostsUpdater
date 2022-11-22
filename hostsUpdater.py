@@ -148,7 +148,7 @@ class Hosts:
         
         else:
         
-            for line in hostsPart.group(): # With group, we extract the string that has matched
+            for line in hostsPart.group().split('\n'): # With group, we extract the string that has matched
 
                 # line format ->   ip  domain  # mac
 
